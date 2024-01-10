@@ -1,0 +1,60 @@
+<!-- service.html -->
+
+{% extends 'base.html' %}
+{% block title %}
+Our Services
+{% endblock title %}
+{% block body %}
+
+<h1>Our Services</h1>
+
+{% for service in services_list %}
+    <div>
+        <h2>{{ service.title }}</h2>
+        <p>{{ service.description }}</p>
+    </div>
+{% endfor %}
+
+<!-- Additional Services -->
+<div>
+    <h2>Nutrition Consulting</h2>
+    <p>Providing expert nutrition advice to help members achieve their fitness goals.</p>
+</div>
+
+<div>
+    <h2>Fitness Assessments</h2>
+    <p>Regular assessments to track members’ progress and tailor their fitness plans accordingly.</p>
+</div>
+
+<div>
+    <h2>Personalized Workout Plans</h2>
+    <p>Customized exercise routines designed to cater to individual fitness levels and goals.</p>
+</div>
+
+<div>
+    <h2>Health and Wellness Workshops</h2>
+    <p>Conducting seminars or workshops on various health and wellness topics.</p>
+</div>
+
+<div>
+    <h2>Physiotherapy</h2>
+    <p>Having in-house physiotherapists to assist members with injury prevention and recovery.</p>
+</div>
+
+<div>
+    <h2>Boxing and Martial Arts Training</h2>
+    <p>Specific classes or spaces dedicated to combat sports training.</p>
+</div>
+
+<div>
+    <h2>Mind-Body Classes</h2>
+    <p>Yoga, Pilates, and meditation classes to promote both physical and mental wellness.</p>
+</div>
+
+<div>
+    <h2>Prenatal and Postnatal Classes</h2>
+    <p>Special classes to safely support women during and after pregnancy.</p>
+</div>
+
+{% endblock body %}
+
